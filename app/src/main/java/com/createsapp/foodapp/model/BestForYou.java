@@ -3,15 +3,17 @@ package com.createsapp.foodapp.model;
 public class BestForYou {
 
     String name;
-    Integer rating;
+    String rating;
     String time;
     String price;
+    Integer imageUrl;
 
-    public BestForYou(String name, Integer rating, String time, String price) {
+    public BestForYou(String name, String rating, String time, String price, Integer imageUrl) {
         this.name = name;
         this.rating = rating;
         this.time = time;
         this.price = price;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -22,11 +24,11 @@ public class BestForYou {
         this.name = name;
     }
 
-    public Integer getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(Integer rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
@@ -44,5 +46,13 @@ public class BestForYou {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public Integer getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(Integer imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
